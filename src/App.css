@@ -1,10 +1,10 @@
 .card {
-    border: 0.1rem solid black;
+    border: 0.1rem solid rgb(7, 7, 7);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     background: #f8f8f8;
-    transition: all 0.1s ease-in-out
+    transition: all 0.1s ease-in-out;
 }
 .card:hover {
     box-shadow: 0.25rem 0.25rem black;
@@ -12,6 +12,7 @@
 }
 .card > h2 {
     font-family: Inter, Verdana, Tahoma;
+    border-left: 0.5rem solid #97d7d7;
 }
 .card > img {
     border-radius: 1rem;
@@ -20,4 +21,16 @@
 .card:hover > img {
     translate: 0.25rem -0.25rem;
     box-shadow: 0.25rem 0.25rem #fea6ca;
+    cursor: pointer; /* Cursor muda para pointer */
 }
+.card > caption {
+    border: 0.1rem solid rgb(24, 12, 190);
+}
+.texto-oculto{
+    display:none;
+    position: abosolute;
+}
+.card:hover .texto-oculto{
+    display: block;
+}
+
